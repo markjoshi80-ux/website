@@ -822,8 +822,8 @@ h3 {
 
 .hero-video {
   flex: 0 0 45%;
-  max-width: 380px;
-  margin-left: auto;
+  max-width: 400px;
+  margin-left: 80p;
 }
 
 .hero-video iframe {
