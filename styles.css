@@ -808,3 +808,26 @@ h3 {
     flex-direction: column;
   }
 }
+.hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-layout > * {
+  flex: 1;
+}
+
+.hero-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column;
+  }
+}
