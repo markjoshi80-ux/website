@@ -823,7 +823,7 @@ h3 {
 .hero-video {
   flex: 0 0 45%;
   max-width: 550px;
-  argin-left: 60px;
+  margin-left: 80px;
 }
 
 .hero-video iframe {
