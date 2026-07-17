@@ -811,11 +811,19 @@ h3 {
 .hero-layout {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
 }
 
-.hero-layout > * {
-  flex: 1;
+.hero-text {
+  flex: 0 0 50%;
+  max-width: 600px;
+}
+
+.hero-video {
+  flex: 0 0 45%;
+  max-width: 550px;
+  margin-left: auto;
 }
 
 .hero-video iframe {
@@ -829,5 +837,9 @@ h3 {
 @media (max-width: 900px) {
   .hero-layout {
     flex-direction: column;
+  }
+
+  .hero-video {
+    max-width: 100%;
   }
 }
