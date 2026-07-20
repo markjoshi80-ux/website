@@ -1076,4 +1076,19 @@ h3 {
   .social-links {
     justify-content: flex-start;
   }
+
+.social-links-light .facebook {
+    color: #1877F2;
+}
+
+.social-links-light .instagram {
+    color: #E4405F;
+}
+
+.social-links-light .x-twitter {
+    color: #000000;
+}
+
+.social-links-light a {
+    background: #ffffff;
 }
