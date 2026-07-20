@@ -801,18 +801,24 @@ h3 {
 }
 
 .social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 38px;
-  padding: 0.45rem 0.75rem;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.36);
-  border-radius: var(--radius);
-  font-size: 0.92rem;
-  font-weight: 900;
-  text-decoration: none;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social-links span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .social-links a:hover,
