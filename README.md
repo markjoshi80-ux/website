@@ -5,11 +5,18 @@ Static website for Faithful Hands & Hope Collective Society. It is dependency-fr
 ## Files
 
 - `index.html` - site content and page structure
+- `about.html` - about page for the charity
+- `programs.html` - program details page
+- `involved.html` - volunteer, donation, and partnership page
+- `sponsors.html` - sponsors page
+- `contact.html` - contact details and message form
+- `youtube-video.html` - same-origin YouTube embed wrapper used to avoid player referrer errors
 - `styles.css` - responsive visual design
 - `script.js` - mobile menu and contact form feedback
 - `assets/faithful-hands-hero.png` - generated homepage hero artwork
-- `assets/favicon.svg` - browser icon
+- `assets/faithful-hands-logo-cropped.png` - browser icon and site logo
 - `staticwebapp.config.json` - Azure Static Web Apps routing and headers
+- `sitemap.xml` and `robots.txt` - SEO discovery helpers
 
 ## Preview locally
 
@@ -37,4 +44,6 @@ http://localhost:8080
 ## Before going live
 
 - Confirm the contact details and Zeffy donation link are still current.
+- Confirm the Facebook, Instagram, and X social links are still current.
 - Update programs, sponsors, and impact numbers with confirmed charity information.
+- If the live domain changes from `https://faithfulhandshope.com/`, update `sitemap.xml`, `robots.txt`, and the YouTube embed origin in `index.html`.
