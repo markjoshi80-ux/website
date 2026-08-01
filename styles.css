@@ -863,6 +863,139 @@ h3 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+/* Events hub */
+.events-hero {
+  background: linear-gradient(115deg, #fffdf8 0%, #fff1c5 56%, #f2b84c 100%);
+}
+
+.event-feature-card {
+  max-width: 980px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.event-card-image {
+  display: block;
+  overflow: hidden;
+  background: var(--forest);
+  border-bottom: 1px solid var(--line);
+}
+
+.event-card-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 220ms ease;
+}
+
+.event-card-image:hover img,
+.event-card-image:focus-visible img {
+  transform: scale(1.015);
+}
+
+.event-card-image:focus-visible {
+  outline: 4px solid rgba(244, 178, 31, 0.75);
+  outline-offset: -4px;
+}
+
+.event-card-content {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2.2rem;
+}
+
+.event-date-block {
+  width: 112px;
+  height: 126px;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  background: linear-gradient(150deg, var(--green), var(--forest));
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(6, 63, 26, 0.2);
+}
+
+.event-date-block span {
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.event-date-block strong {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.2rem;
+  line-height: 0.95;
+}
+
+.event-label {
+  margin: 0 0 0.45rem;
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.event-card-copy h3 {
+  font-size: 2rem;
+}
+
+.event-card-copy > p:not(.event-label) {
+  max-width: 680px;
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+}
+
+.event-card-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.6rem 0 0;
+}
+
+.event-card-meta div {
+  padding: 0.9rem 1rem;
+  background: var(--cream);
+  border-radius: var(--radius);
+}
+
+.event-card-meta dt {
+  color: var(--green);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.event-card-meta dd {
+  margin: 0.3rem 0 0;
+  color: var(--forest);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.event-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.event-ticket-link {
+  color: var(--green-dark);
+  font-weight: 900;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+}
+
 /* Silent auction fundraiser */
 .auction-hero {
   position: relative;
@@ -1357,6 +1490,10 @@ h3 {
   .auction-logo-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .event-card-meta {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 980px) {
@@ -1623,5 +1760,40 @@ h3 {
   .auction-final-cta {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .event-card-content {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding: 1.4rem;
+  }
+
+  .event-date-block {
+    width: 100%;
+    height: auto;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0.55rem;
+    padding: 0.85rem 1rem;
+    text-align: left;
+  }
+
+  .event-date-block strong {
+    font-size: 1.5rem;
+  }
+
+  .event-card-copy h3 {
+    font-size: 1.65rem;
+  }
+
+  .event-card-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .event-ticket-link {
+    padding: 0.5rem 0;
+    text-align: center;
   }
 }

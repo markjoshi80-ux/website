@@ -8,7 +8,8 @@ Static website for Faithful Hands & Hope Collective Society. It is dependency-fr
 - `about.html` - about page for the charity
 - `programs.html` - program details page
 - `involved.html` - volunteer, donation, and partnership page
-- `fundraiser.html` - first annual silent auction event and ticket information
+- `events.html` - upcoming events hub
+- `fundraiser.html` - first annual silent auction event details and ticket information
 - `sponsors.html` - sponsors page
 - `contact.html` - contact details and message form
 - `youtube-video.html` - same-origin YouTube embed wrapper used to avoid player referrer errors
