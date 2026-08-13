@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "faithfulhandshope.com",
+  "Id": "d4803f1b-54ca-4043-a82e-9b306f68f873"
+}
