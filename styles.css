@@ -1845,20 +1845,21 @@ h3 {
   }
 }
 
-.sold-out-ribbon {
+  .sold-out-ribbon {
     position: absolute;
-    top: 120px;
-    right: -80px;
-    width: 350px;
+    top: 35px;
+    right: -110px;
+    width: 320px;
     text-align: center;
     background: #d32f2f;
     color: #fff;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 900;
-    letter-spacing: 3px;
-    padding: 15px 0;
+    letter-spacing: 2px;
+    padding: 12px 0;
     transform: rotate(45deg);
     z-index: 999;
     box-shadow: 0 4px 12px rgba(0,0,0,.35);
     text-transform: uppercase;
+  
 }
