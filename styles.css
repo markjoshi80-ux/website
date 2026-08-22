@@ -1187,7 +1187,7 @@ h3 {
 
 .auction-ticket-card {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 2.15rem;
   color: var(--ink);
   background: var(--paper);
